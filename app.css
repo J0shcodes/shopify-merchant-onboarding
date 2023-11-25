@@ -17,6 +17,10 @@ header {
   padding: 0.75rem 1rem;
 }
 
+#responsive-logo {
+  display: none;
+}
+
 input[type="search"] {
   padding: 0.5rem;
   width: 30rem;
@@ -39,8 +43,8 @@ input[type="search"]:active {
 }
 
 input[type="search"]:focus {
-    border: 1px solid #fff;
-  }
+  border: 1px solid #fff;
+}
 
 #merchant-container {
   display: flex;
@@ -106,24 +110,32 @@ input[type="search"]:focus {
 }
 
 @media screen and (max-width: 750px) {
-    input[type="search"] {
-        width: 15rem;
-    }
+  #logo {
+    display: none;
+  }
 
-    #davii {
-        display: none;
-    }
+  #responsive-logo {
+    display: block;
+  }
+  
+  input[type="search"] {
+    width: 15rem;
+  }
 
-    #merchant-container {
-        /* padding-left: 0.5rem; */
-        /* width: ; */
-    }
+  #davii {
+    display: none;
+  }
 
-    #merchant-option {
-        display: flex;
-        /* justify-content: flex-end;
+  #merchant-container {
+    /* padding-left: 0.5rem; */
+    /* width: ; */
+  }
+
+  #merchant-option {
+    display: flex;
+    /* justify-content: flex-end;
         align-items: flex-start; */
-        /* background: blue; */
-        gap: 0.5rem;
-      }
+    /* background: blue; */
+    gap: 0.5rem;
+  }
 }
