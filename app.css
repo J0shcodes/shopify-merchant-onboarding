@@ -3,12 +3,14 @@
 * {
   padding: 0;
   margin: 0;
-  /* overflow: hidden; */
 }
 
 body {
   font-family: "Inter";
+  background: #f1f1f1;
 }
+
+/* NAVIGATION */
 
 header {
   background: #1a1a1a;
@@ -109,6 +111,72 @@ input[type="search"]:focus {
   font-weight: 500;
 }
 
+/* MAIN */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  /* height: 100%; */
+}
+
+#plan {
+  display: flex;
+  width: 50rem;
+  padding: 0.75rem 0.5rem 0.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 0.5rem;
+}
+
+#plan p {
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #e3e3e3;
+}
+
+#select-plan {
+  background: #fff;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0.38rem 0.75rem;
+  cursor: pointer;
+}
+
+#select-plan:hover {
+  background: #f7f7f7;
+}
+
+#select-plan:active {
+  background: #f7f7f7;
+  box-shadow: 0px 2px 1.5px 0px #e2e2e2 inset;
+}
+
+#select-icon {
+  border-radius: 0.375rem;
+  /* background: transparent; */
+  padding: 0.38rem;
+  border: none;
+}
+
+#guide {
+  margin-top: 1rem;
+  width: 50rem;
+  padding: 0.5rem;
+  border-radius: 1.125rem;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
 @media screen and (max-width: 750px) {
   #logo {
     display: none;
@@ -117,7 +185,7 @@ input[type="search"]:focus {
   #responsive-logo {
     display: block;
   }
-  
+
   input[type="search"] {
     width: 15rem;
   }
