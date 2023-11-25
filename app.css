@@ -170,11 +170,61 @@ section {
 #guide {
   margin-top: 1rem;
   width: 50rem;
-  padding: 0.5rem;
+  padding: 1.13rem;
   border-radius: 1.125rem;
   border: 1px solid #dbdbdb;
-  background: #fff;
+  background:#fff;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+#guide-open {
+  display: flex;
+  justify-content: space-between;
+}
+
+#guide-open p {
+  color: #303030;
+  font-weight: 600;
+}
+
+#guide-open button {
+  background: transparent;
+  border: 0;
+}
+
+#guide-open button:hover {
+  cursor: pointer;
+}
+
+#guide p {
+  font-size: 0.8125rem;
+  color: #303030;
+}
+
+#progress-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#progress-count {
+  font-size: 0.75rem;
+  color: #303030;
+}
+
+#bar-1 {
+  width: 4.5rem;
+  height: 0.25rem;
+  background: #e3e3e3;
+  margin-top: 0.4rem;
+  border-radius: 1.125rem;
+}
+
+#bar-2 {
+    background: #1a1a1a;
+    width: 20%;
+    height: 100%;
+    border-radius: 1.125rem;
 }
 
 @media screen and (max-width: 750px) {
@@ -205,5 +255,19 @@ section {
         align-items: flex-start; */
     /* background: blue; */
     gap: 0.5rem;
+  }
+
+  section {
+    display: block;
+    /* background: red; */
+    width: 100vw;
+  }
+
+  #plan {
+    width: 100%;
+  }
+
+  #guide {
+    width: 100%;
   }
 }
