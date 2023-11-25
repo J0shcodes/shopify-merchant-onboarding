@@ -46,7 +46,7 @@ input[type="search"]:focus {
   display: flex;
   justify-content: space-between;
   /* background: orange; */
-  width: 48.24rem;
+  /* width: 48.24rem; */
 }
 
 #bell {
@@ -115,7 +115,8 @@ input[type="search"]:focus {
     }
 
     #merchant-container {
-        padding-left: 0.5rem;
+        /* padding-left: 0.5rem; */
+        /* width: ; */
     }
 
     #merchant-option {
