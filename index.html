@@ -34,9 +34,11 @@
         </div>
       </div>
     </header>
-    <section>
-      <div id="plan">
-        <p id="plan-text">Extend your trial for $1/month for 3 months on select plans.</p>
+    <main>
+      <section id="plan">
+        <p id="plan-text">
+          Extend your trial for $1/month for 3 months on select plans.
+        </p>
         <div>
           <button id="select-plan">Select a plan</button>
           <button id="select-icon">
@@ -45,24 +47,137 @@
             />
           </button>
         </div>
-      </div>
-      <div id="guide">
-        <div id="guide-open">
-          <p>Setup guide</p>
+      </section>
+
+      <section class="container">
+        <div id="guide">
+          <div id="">
+            <p id="guide-header">Setup guide</p>
+            <div id="personalise">
+              <p>
+                Use this personalized guide to get your store up and running.
+              </p>
+              <div id="progress-container">
+                <div id="progress-count">1 / 5 completed</div>
+                <div id="bar-1">
+                  <div id="bar-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <button>
             <img
               src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg"
             />
           </button>
         </div>
-        <p>Use this personalized guide to get your store up and running.</p>
-        <div id="progress-container">
-            <div id="progress-count">1 / 5 completed</div>
-            <div id="bar-1">
-                <div id="bar-2"></div>
+
+        <div id="setup-container">
+          <div id="customize" class="setup highlight">
+            <div class="setup-option">
+              <div>
+                <input type="radio" />
+              </div>
+              <div class="setup-text">
+                <p>Customize your online store</p>
+                <div>
+                  Choose a theme and add your logo, colors, and images to
+                  reflect your brand. <span>Learn more</span>
+                </div>
+                <button>Customize theme</button>
+              </div>
             </div>
+            <div>
+              <img
+                src="https://crushingit.tech/hackathon-assets/customise-store.png"
+              />
+            </div>
+          </div>
+
+          <div id="product" class="setup">
+            <div class="setup-option">
+                <div>
+                  <input type="radio" />
+                </div>
+                <div class="setup-text">
+                  <p>Add your first product</p>
+                  <div>
+                    Write a description, add photos, and set pricing for the products you plan to sell.
+                    <span>Learn more</span>
+                  </div>
+                  <button>Add product</button>
+                  <button id="import">Import product</button>
+                </div>
+              </div>
+              <div>
+                <img src="https://crushingit.tech/hackathon-assets/product.png" />
+              </div>
+          </div>
+
+          <div id="domain" class="setup">
+            <div class="setup-option">
+              <div>
+                <input type="radio" />
+              </div>
+              <div class="setup-text">
+                <p>Add a custom domain</p>
+                <div>
+                  Your current domain is 222219.myshopify.com but you can add a
+                  custom domain to help customers find your online store.
+                  <span>Learn more</span>
+                </div>
+                <button>Add domain</button>
+              </div>
+            </div>
+            <div>
+              <img src="https://crushingit.tech/hackathon-assets/website.png" />
+            </div>
+          </div>
+
+          <div id="store" class="setup">
+            <div class="setup-option">
+              <div>
+                <input type="radio" />
+              </div>
+              <div class="setup-text">
+                <p>Name your store</p>
+                <div>
+                  Your temporary store name is currently Davii collections. The
+                  store name appears in your admin and your online store.
+                  <span>Learn more</span>
+                </div>
+                <button>Name store</button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://crushingit.tech/hackathon-assets/name-store.png"
+              />
+            </div>
+          </div>
+
+          <div id="provider" class="setup">
+            <div class="setup-option">
+              <div>
+                <input type="radio" />
+              </div>
+              <div class="setup-text">
+                <p>Name your store</p>
+                <div>
+                  Choose a payment provider to start accepting payments. You’ll
+                  need to create an account with the payment provider and set it
+                  up with your Shopify store.
+                  <span>Learn more</span>
+                </div>
+                <button>Set up payment</button>
+              </div>
+            </div>
+            <div>
+              <img src="https://crushingit.tech/hackathon-assets/payment.png" />
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>

@@ -113,7 +113,7 @@ input[type="search"]:focus {
 
 /* MAIN */
 
-section {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,6 +160,12 @@ section {
   box-shadow: 0px 2px 1.5px 0px #e2e2e2 inset;
 }
 
+#select-plan:focus {
+  background: #fff;
+  box-shadow: 0px 0px 0px 3px #005bd3, 0px 0px 0px 1px #fff,
+    0px -1px 0px 0px #b5b5b5 inset;
+}
+
 #select-icon {
   border-radius: 0.375rem;
   /* background: transparent; */
@@ -167,38 +173,46 @@ section {
   border: none;
 }
 
-#guide {
+.container {
   margin-top: 1rem;
   width: 50rem;
   padding: 1.13rem;
   border-radius: 1.125rem;
   border: 1px solid #dbdbdb;
-  background:#fff;
+  background: #fff;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
 }
 
-#guide-open {
+#guide {
   display: flex;
+  padding: 0.5rem;
   justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
-#guide-open p {
+#guide-header {
   color: #303030;
   font-weight: 600;
+  font-size: 0.8125rem;
 }
 
-#guide-open button {
+#personalise {
+  margin-top: 0.5rem;
+}
+
+#personalise p {
+  color: #303030;
+  font-size: 0.8125rem;
+}
+
+#guide button {
   background: transparent;
   border: 0;
 }
 
-#guide-open button:hover {
+#guide button:hover {
   cursor: pointer;
-}
-
-#guide p {
-  font-size: 0.8125rem;
-  color: #303030;
 }
 
 #progress-container {
@@ -221,10 +235,106 @@ section {
 }
 
 #bar-2 {
-    background: #1a1a1a;
-    width: 20%;
-    height: 100%;
-    border-radius: 1.125rem;
+  background: #1a1a1a;
+  width: 20%;
+  height: 100%;
+  border-radius: 1.125rem;
+}
+
+#setuo-container {
+  margin-top: 1rem;
+}
+
+.setup {
+  display: flex;
+  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+  align-items: center;
+  gap: 6rem;
+  align-self: stretch;
+  border-radius: 0.625rem;
+}
+
+.setup-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex: 1 0 0;
+}
+
+.setup-text p {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 1rem;
+}
+
+.setup-text div {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 1rem;
+  align-self: stretch;
+  line-height: 140%;
+}
+
+span {
+  color: #005bd3;
+}
+
+.setup-text button {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #404040;
+  border-radius: 0.375rem;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333,
+    0px 2px 0px 0px #000;
+  color: #f6f3f6;
+  border-top: 1.5px solid var(rgba(255, 255, 255, 0.2));
+  border-right: 1.5px solid var(rgba(255, 255, 255, 0.2));
+  border-left: 1.5px solid var(rgba(255, 255, 255, 0.2));
+  cursor: pointer;
+}
+
+.setup-text button:hover {
+  background: #2a2a2a;
+}
+
+.setup-text button:active {
+  background: #2b2b2b;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 3px 0px 0px #000 inset;
+}
+
+.setup-text button:focus {
+  box-shadow: 0px 0px 0px 5px #005bd3, 0px 0px 0px 3px #fff,
+    0px 0px 0px 1.5px #333;
+}
+
+#import {
+  padding: 0.375rem 0.75rem;
+  margin-left: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 0.375rem;
+  box-shadow: 0px 0px 0px 0px;
+  color: #323232;
+  border: 0;
+  cursor: pointer;
+}
+
+#import:hover {
+  background: #e7e7e7;
+}
+
+#import:active {
+  background: #e0e0e0;
+}
+
+#import:focus {
+  background: #fff;
+  box-shadow: 0px 0px 0px 3px #005bd3, 0px 0px 0px 1px #fff,
+    0px -1px 0px 0px #b5b5b5 inset;
 }
 
 @media screen and (max-width: 750px) {
@@ -257,17 +367,18 @@ section {
     gap: 0.5rem;
   }
 
-  section {
+  main {
     display: block;
     /* background: red; */
-    width: 100vw;
+    /* width: 100vw; */
   }
 
   #plan {
-    width: 100%;
+    width: 30rem;
   }
 
   #guide {
-    width: 100%;
+    width: 30rem;
+    /* background: green; */
   }
 }
