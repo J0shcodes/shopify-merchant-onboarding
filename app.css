@@ -201,7 +201,7 @@ main {
 
 .container {
   margin-top: 1rem;
-  width: 50rem;
+  max-width: 50rem;
   padding: 1.13rem;
   border-radius: 1.125rem;
   border: 1px solid #dbdbdb;
@@ -267,7 +267,7 @@ main {
   border-radius: 1.125rem;
 }
 
-#setuo-container {
+#setup-container {
   margin-top: 1rem;
 }
 
@@ -573,5 +573,9 @@ a {
   #guide {
     width: 30rem;
     /* background: green; */
+  }
+
+  .container img {
+    display: none;
   }
 }
