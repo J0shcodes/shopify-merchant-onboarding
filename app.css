@@ -148,7 +148,7 @@ main {
 }
 
 .main-container {
-  max-width: 50rem;
+  width: 50rem;
 }
 
 #plan {
@@ -268,9 +268,12 @@ main {
   border-radius: 1.125rem;
 }
 
-#setup-container {
+.setup-container {
   margin-top: 1rem;
-  /* display: none; */
+}
+
+.customize, .product, .domain, .store, .provider {
+  cursor: pointer;
 }
 
 .setup {
@@ -287,6 +290,12 @@ main {
   align-items: flex-start;
   gap: 0.5rem;
   flex: 1 0 0;
+  position: relative;
+}
+
+.setup-text {
+  width: 20rem;
+  padding-top: 0.3rem;
 }
 
 .setup-text p {
@@ -549,6 +558,56 @@ span {
   display: block;
 }
 
+.highlight {
+  background: #f3f3f3;
+}
+
+/* .product-text,
+.product-img,
+.domain-text,
+.domain-img,
+.store-text,
+.store-img,
+.provider-text,
+.provider-img {
+  display: none;
+} */
+
+.radio {
+  cursor: pointer;
+}
+
+.radio:hover {
+}
+
+.rotating-input {
+  width: 1rem;
+  height: 1rem;
+  /* background: orange; */
+  border-radius: 50%;
+  border: 3px solid #8a8a8a;
+  /* border-top-color: transparent;
+  animation: rotation 1s linear 1s; */
+  /* display: none; */
+  cursor: pointer;
+}
+
+.checkmark {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 @media screen and (max-width: 750px) {
   #logo {
@@ -581,6 +640,10 @@ span {
     display: block;
   }
 
+  .main-container {
+    width: 100%;
+  }
+
   #plan {
     /* width: 43.7rem; */
     border-radius: 0;
@@ -596,7 +659,11 @@ span {
     /* width: 50rem; */
   }
 
-  #setup-container img {
+  .setup-image {
     display: none;
+  }
+
+  .setup-text {
+    width: 22rem;
   }
 }
